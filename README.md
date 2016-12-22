@@ -14,8 +14,8 @@
 
 # ResignXcode<a id="sec-1" name="sec-1"></a>
 
-This little script's purpose is just for resign Xcode with a self-signed certificate.  
-From Xcode8, apple just stops the use of plugins to give programmers more security. This is really inconvenience for me. Everytime Xcode updates, I have to resign Xcode mannually to continue use so much good plugins[(Manual From XVim)](https://github.com/XVimProject/XVim/blob/master/INSTALL_Xcode8.md). So, this weapon is born.  
+This little script's purpose is resign Xcode with a self-signed certificate.  
+From Xcode8, apple stops the support of third-party plugins to give programmers more security. This is really inconvenience for me. Everytime Xcode updates, I have to resign Xcode mannually to continue the use of XVim[(Manual From XVim)](https://github.com/XVimProject/XVim/blob/master/INSTALL_Xcode8.md). So, before the widely use of Xcode officially extensions, I'll have to use this to help me.  
 
 # Use<a id="sec-2" name="sec-2"></a>
 
@@ -28,13 +28,14 @@ From Xcode8, apple just stops the use of plugins to give programmers more securi
 
 # Simple explain<a id="sec-4" name="sec-4"></a>
 
+Here's what the code does:  
 1.  Use openssl to generate 2048 RSA self-signed certificate.
 2.  Import the cer into your keychain.
 3.  Resign your Xcode.
 
 # Other things<a id="sec-5" name="sec-5"></a>
 
--   Good app: <https://github.com/fpg1503/MakeXcodeGr8Again#should-i-use-it>
--   Discuss: <https://github.com/alcatraz/Alcatraz/issues/475>
--   openssl req file format: <https://wiki.openssl.org/index.php/Manual:Req(1)>
+-   Another good app to use: <https://github.com/fpg1503/MakeXcodeGr8Again#should-i-use-it>
+-   A discuss: <https://github.com/alcatraz/Alcatraz/issues/475>
+-   Openssl req configuration file format: <https://wiki.openssl.org/index.php/Manual:Req(1)>
 -   Generate right self-signed cer: <http://security.stackexchange.com/questions/17909/how-to-create-an-apple-installer-package-signing-certificate?answertab=votes#tab-top>
