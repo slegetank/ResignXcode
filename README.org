@@ -14,6 +14,7 @@ python ResignXcode.py
 2. You can read the code to decide if you want to use it.
 * Simple explain 
 Here's what the code does:
+
 1. Use openssl to generate 2048 RSA self-signed certificate.
 2. Import the cer into your keychain.
 3. Resign your Xcode.

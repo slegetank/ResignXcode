@@ -29,6 +29,7 @@ From Xcode8, apple stops the support of third-party plugins to give programmers 
 # Simple explain<a id="sec-4" name="sec-4"></a>
 
 Here's what the code does:  
+
 1.  Use openssl to generate 2048 RSA self-signed certificate.
 2.  Import the cer into your keychain.
 3.  Resign your Xcode.
