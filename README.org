@@ -2,7 +2,6 @@
 #+AUTHOR: slegetank
 #+OPTIONS: \n:\n
 
-* ResignXcode
 This little script's purpose is resign Xcode with a self-signed certificate.
 From Xcode8, apple stops the support of third-party plugins to give programmers more security. This is really inconvenience for me. Everytime Xcode updates, I have to resign Xcode mannually to continue the use of XVim[[https://github.com/XVimProject/XVim/blob/master/INSTALL_Xcode8.md][(Manual From XVim)]]. So, before the widely use of Xcode officially extensions, I'll have to use this to help me.
 * Use 
