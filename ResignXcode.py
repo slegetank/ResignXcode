@@ -1,8 +1,4 @@
-#coding=utf-8
-
 import sys, os, getopt
-reload(sys)
-sys.setdefaultencoding('utf-8')
 
 import re
 import getpass
@@ -13,7 +9,7 @@ RESIGN_CER_ID = "XcodeResigner"
 if __name__ == '__main__':
     print("\033[31mCaution: These steps may put your Xcode under risk, so if you don't know what's going on, please stop.\033[0m")
     print("Resign will kill your Xcode, and may take a while; During the process, please don't open it.")
-    choice = raw_input('Would you like to start? (y/n)\n')
+    choice = input('Would you like to start? (y/n)\n')
     
     if choice != 'y':
         print("abort.")
@@ -59,6 +55,6 @@ if __name__ == '__main__':
     if os.path.exists(TEMP_DIR):
         os.system('rm -rf %s' % TEMP_DIR)
 
-    print '\xF0\x9f\x8d\xba  Resign finished. Have fun!'
+    print('\xF0\x9f\x8d\xba  Resign finished. Have fun!')
     
     
